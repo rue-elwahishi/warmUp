@@ -21,11 +21,11 @@ var first = 'Hammam';
 	var arr = [13,14,13,15,16,17,19,13,16,15];
 
  function averageAge (array) {
- 	var total;
+ 	var total = 0;
  	
  	for (var i = 0; i < array.length; i++){
  		 	
- 		  total = array[i] + array[i] + array[i] + array[i] + array[i] + array[i] + array[i] + array[i] + array[i] + array[i];
+ 		  total += array[i] 
 
  		
  			
