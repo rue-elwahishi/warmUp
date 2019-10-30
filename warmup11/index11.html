@@ -2,17 +2,15 @@
 <html>
 <head>
 	<title> </title>
-	<link rel="stylesheet" type="text/css" href="styling.css">
+	<link rel="stylesheet" type="text/css" href="syling.css">
 </head>
 <body>
 
 	<button class="right"> Right </button> <button class="Left"> Left </button> <br>
 	<button> Creat </button>
-	<ul class="rightList"></ul> <ul class="leftList"> </ul>
-
-
-
-
+	 <div id = "divlist">
+	  <ul class="rightList"></ul> <ul class="leftList"> </ul> 
+	</div>
 
 
 
@@ -21,8 +19,11 @@
  <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
  <script>
  		$('.Left').on('click', function() {
-	$('ul.leftList').html('<li> element </li>').addClass("hi hello")
-});
+	$('.leftList').append('<li> left element </li>') 
+	});
+	$('.right').on('click', function() {
+		$('.rightList').append('<li> right element </li>')
+	});
 
  </script>
 </body>

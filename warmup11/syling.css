@@ -1,7 +1,5 @@
-.hi {
-	color: red;
-}
+ #divlist {
+	display: flex;
+	
+  }
 
-.hello {
-	color: blue;
-}
