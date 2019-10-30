@@ -1,0 +1,33 @@
+body {
+	background-color: #89cff0; 
+}
+img {
+	align-content: center;
+	width: 15em;
+
+}
+.here {
+	color: orange;
+	font-family: sans-serif;
+}
+.there {
+	color: grey;
+	font-family: serif;
+}
+div {
+	background: black;
+	padding: 90px;
+  margin: 0px;
+}
+h1 {
+	color: yellow;
+}
+ footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  position: fixed;
+}
