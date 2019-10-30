@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Welcome to my warmUp </title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div>
+	<input type="text" name="write text"> <br>
+	<button>
+		click
+	</button>
+</div>
+
+<div>
+	<ul></ul>
+</div>
+
+ <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+ <script>
+ $('button').on('click', function() {
+ 	var x = $('input').val()
+
+     $('ul').append(`<li> ${x} </li>`)
+     $('ul li:nth-child(even)').addClass("button1")
+     $('ul li:nth-child(odd)').addClass("div1")
+
+   
+});
+
+ 
+ 	</script>
+</body>
+</html>
