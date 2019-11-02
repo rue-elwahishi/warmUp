@@ -34,25 +34,7 @@
             filter_list([1,'a','b',0,15]) == [1,0,15]
             filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 */
-var romanNumbers = {
-      I : 1,
-      V : 5,
-      X : 10,
-      L : 50,
-      C : 100,
-      D : 500,
-      M : 1000,
-};
- function romanNumeral(string) {
-    
-    for (var key in romanNumbers) { 
 
-      string = romanNumbers[key] 
-
-    }
-    return string;
-
-}  
 
 //another solution with array
 
@@ -61,15 +43,56 @@ var letters = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
 //they have the same index
 
 function romanNumbers(string) {
-    
-    for(var i = 0; i < numbers.length; i++) {
-        for(var j = 0; j < letters.length; j++){
-            if (i === j) {
-               (numbers[i] = letters[j])
-                console.log(j)
+    string.split('') 
+    var arr = [];
+    for (var x = 0; x < string.length; x++){
+ 
+             console.log(string[x], letters[x])
+             for(var j = 0; j < letters.length; j++){
+                        if (string[x] === letters[j]) {
+                 for(var i = 0; i < numbers.length; i++) {
+                     if (i === j) {
+                        arr.push(numbers[i])
 
-            }
+                     }
+                 }
+  } 
+             
+            }       
+    }
+
+    for (var u = 0; u < arr.length; u++) {
+        if (arr[u] < arr[u+1]){
+
+            arr.splice(u, 1, arr[u] * -1)
         }
     }
- return numbers[i];
-}
+     return arr.reduce(function(element, acc) {
+           return acc += element
+
+     }, 0)
+
+     
+        }
+
+ function toCamelCase(sentence) {
+   var arr = sentence.split('')
+    for ( var y = 0; y < arr.length; y++){
+        if (arr[y] === "-" || arr[y] === "_"){
+            arr.splice(y, 1, arr[y + 1].toUpperCase())
+        }
+
+    }
+    return arr.join('');
+ }
+
+
+
+ function filter_list(array) {
+    return array.filter(function(element){
+        return typeof element === 'number'
+    })
+ }
+
+
+
