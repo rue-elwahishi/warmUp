@@ -19,5 +19,11 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
 
 var maxProfit = function(prices) {
-  // YOUR CODE HERE
+     
+          var arr = prices
+          for ( var i = 0; i < arr.length; i++) {
+            var days = i;
+            var prices = arr[i]
+          }
+          
 };
