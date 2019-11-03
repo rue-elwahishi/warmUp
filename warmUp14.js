@@ -18,12 +18,25 @@ Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
 
-var maxProfit = function(prices) {
-     
-          var arr = prices
-          for ( var i = 0; i < arr.length; i++) {
-            var days = i;
-            var prices = arr[i]
-          }
-          
-};
+var maxProfit = function(array) {
+	var profit = 0;
+	var minimumValue = array[0];
+
+
+	for (var i = 0; i < array.length; i++) {
+		if(minimumValue > array[i+1]){
+			minimumValue = array[i]
+		}
+		
+	}
+
+    for (var j = array.indexOf(minimumValue)+ 1; j < array.length; j++){
+    	if ( array[j] > minimumValue){
+    		profit = array[j] - minimumValue
+    		}
+
+   				 }	
+	
+     return profit;
+        }   
+            
