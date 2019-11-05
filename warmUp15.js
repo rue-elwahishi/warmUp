@@ -9,14 +9,14 @@
 function reverseStr(string){
 	var str = ' '
 	var arr = [];
-	arr = string.split(" ")
-	for ( var i = arr.length -1; i >= 0; i--){
-           
-           str = arr[i] 
+	string.split(" ")
+	for ( var i = string.length -1; i >= 0; i--){
+           arr.push(string[i])
+            
           
 
 
 	}
 
-  return str;
+  return arr.join('');
 }
