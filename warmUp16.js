@@ -16,3 +16,24 @@
 // Constraints:
 // 1 <= text.length <= 10^4
 // text consists of lower case English letters only.
+
+function countBalloon(string) {
+	var text = 'balloon' 
+	var arr = [];
+	var count = 0;
+     
+	for (var i = 0; i < string.length; i++){
+		for (var j = 0; j < text.length; j++)
+		if(string.length === text.length && string[i] === text[j]){
+                  var x = arr.push(string[i])
+                    x.join('')
+
+
+		} 
+		else return 0
+	}
+
+
+}
+ //we need to count how many words we have after join
+ 
