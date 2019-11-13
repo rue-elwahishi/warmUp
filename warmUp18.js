@@ -10,3 +10,19 @@
 
 // input   =  "aaaaaaaaaaaa"
 // result  =  "123456789101112"
+
+function charOccurence(string){
+      var str = '';
+	  var count = [];
+	  for(var j = 0; j <=26; j++)
+	  	count.push(1)
+
+	  var keys = string.split('');
+	for(var i = 0; i < string.length; i++){
+		str = str + count[keys.indexOf(string[i])]++
+		
+	}
+
+return str;
+
+}
