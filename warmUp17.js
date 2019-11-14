@@ -25,8 +25,29 @@
 // 1 <= word.length <= 10^4
 // word[i] is an English lowercase letter.
 
+// ​va
 // ​
-// ​
-// var calculateTime = function(keyboard, word) {
+
+var calculateTime = function(keyboard, word) {
+	           var result = 0;
+	           var arr2 =[0];
+               var arr = [];
+               var arr1 = [];
+               arr = keyboard.split('')
+               arr1 = word.split('')
+            arr1.forEach(function(elmenet){
+            	var x = arr.indexOf(elmenet);
+            	 arr2.push(x);
+            	 console.log(arr2)
+
+            });
+            for(var i = 0; i < arr2.length - 1; i++){
+            	result +=  Math.abs(arr2[i] - arr2[i+1])
+                    console.log(result)
+                  
+              }
+          
+          return result;
+      }
     
-// };
+ 
